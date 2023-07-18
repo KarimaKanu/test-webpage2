@@ -15,8 +15,10 @@ line-height: 26px; /* 144.444% */
 display: flex;
 
 }
-nav li {
+nav li a {
     padding: 10px;
+    text-decoration: none;
+    color: black;
 }
 .first1 {
     color: var(--dark-01, #131313);
@@ -94,6 +96,7 @@ margin-bottom: 50px;
     gap: 30px;
     margin-top: 100px;
     align-items: center;
+    margin-bottom: 70px;
 }
 .list-img1, .list-img2 {
     display: flex;
@@ -105,8 +108,112 @@ margin-bottom: 50px;
 .list-text {
     padding-right: 50px;
 }
+.box-text p {
+    color: #727272;
+    font-size: 15px;
+}
+
+.box-text1, .box-text2, .box-text3, .box-text4 {
+    margin: 50px;
+    padding: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    width: 450px;
+    height: 100px;
+    border-radius: 8px;
+}
+
+.en-text {
+    width: 450px;
+    padding-top:40px ;
+}
+
+.box {
+    display: flex;
+    
+    align-items: center;
+}
+.box-img {
+    width: 40%;
+    text-align: center;
+}
+.box-img img {
+    width: 80%;
+    margin-right: 70px;
+    
+}
+
+.box-text {
+    margin-left: 200px;
+    width: 45%;
+}
+.orange-h {
+    border-left: 5px solid #FF900E ;
+    padding-left: 5px;
+} 
+.ten-year {
+    background-color: #FF900E;
+    border-radius: 8px;
+    padding: 30px 30px;
+    color: white;
+    width: 150px;
+    position: relative;
+    bottom: 70px;
+
+}
+.ten-year h1 {
+    font-size: 35px;
+}
+    
 
 @media screen and (max-width:576px){
-    
+
+    .first {
+        flex-direction: column;
+        padding: 30px;
+    }
+    .banner-img {
+        width: 80%;
+    }
+    .list {
+        flex-direction: column;
+    }
+    .list-img1, .list-img2 {
+        display: flex;
+        margin: auto;
+    }
+    .list img {
+        width: 200px;
+        text-align: center;
+    }
+    .list-text {
+        text-align: center;
+    }
+    .box {
+        flex-direction: column;
+    }
+    .box-text {
+        margin-left: 200px;
+        width: 100%;
+    }
+    .box-text1, .box-text2, .box-text3, .box-text4 {
+        width: 350px;
+    }
+    .en-text {
+        width: 350px;
+    }
+    .box-img {
+        width: 100%;
+        
+        flex-direction: column;
+        justify-content: center;
+    }
+    .box img {
+        width: 80%;
+        margin-right: 0px;
+        
+    }
+        
     
 }
